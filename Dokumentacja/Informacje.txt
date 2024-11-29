@@ -1,0 +1,4 @@
+System Operacyjny: Windows 10
+Środowiska Programistyczne: Visual Studio Community 2022
+Języki programowania użyte: C#
+System: Windows Machine

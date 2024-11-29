@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lakierySklep.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label x:Name="lblKoszykInfo" Text="w koszyku: 0 szt."/>
+                <Image Source="koszyk.jpg"/>
+            </HorizontalStackLayout>
+            <Label x:Name="lblReklama"
+                   IsVisible="False"
+                   HorizontalOptions="End"
+                   BackgroundColor="red"
+                   TextColor="white"
+                   Padding="5"
+                   Margin="0, 0, 50, 0"
+                   HeightRequest="30"/>
+            <Image Source="f1.jpg"
+                   x:Name="imgProdukt"
+                   HorizontalOptions="Center"
+                   WidthRequest="400"
+                   Margin="5"/>
+            <Label x:Name="lblNazwa"
+                   Text="Lakier hybrydowy No Risk No story"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Label x:Name="lblCena"
+                   Text="27,29 PLN"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            <Label x:Name="lblOpis"
+                   Text="Oszczedzasz 33%"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="Red"
+                   TextColor="White"
+                   Margin="5"
+                   Padding="5"/>
+            <Button Text="dodaj do koszyka"
+                    WidthRequest="200"
+                    Clicked="onKoszykClicked"/>
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Button Text="poprzedni"
+                        BackgroundColor="Gray"
+                        WidthRequest="200"
+                        Margin="0, 0, 15, 0"
+                        Clicked="onPoprzedniClicked"/>
+                <Button Text="następny"
+                        BackgroundColor="Gray"
+                        WidthRequest="200"
+                        Margin="15, 0, 0, 0"
+                        Clicked="onNastepnyClicked"
+                        />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
